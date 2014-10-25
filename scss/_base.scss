@@ -2,3 +2,62 @@
 Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
+
+body {
+     background: repeating-radial-gradient(white,#d3aeeb,#a25ed4,#471c55);
+}
+
+blockquote {
+    color: brown;
+}
+
+.content {
+    @include body-font-regular;
+    @include fontSize(18px);
+    height: 2000px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto; 
+    max-width: 500px;
+    width: 960px;
+}
+
+.content-background {
+    border-color: white;
+    border-style: dotted;
+    padding: 30px;
+    
+}
+
+.photo {
+    border-radius: 10px;
+}
+
+
+.footer {
+    @include fontSize(15px);
+    background-color: white;
+    border-radius: 20px; 
+    text-align: center;
+}
+
+nav[role="navigation"] {
+    float: center;
+}
+
+
+.header {
+    float: left;
+    text-align: left;
+}
+
+.header-photo {
+    float: left;
+    padding: 0px;
+}
+
+.header-title {
+    background: white;
+    text-align: center; 
+    box-shadow: 10px 10px 5px black;
+}
